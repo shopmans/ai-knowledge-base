@@ -1,0 +1,61 @@
+name: Daily AI Knowledge Collection
+
+on:
+  schedule:
+    - cron: '0 9 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12.3
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12.3'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run collection pipeline
+        env:
+          LLM_PROVIDER: ${{ secrets.LLM_PROVIDER }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          QWEN_API_KEY: ${{ secrets.QWEN_API_KEY }}
+          ZHIPU_API_KEY: ${{ secrets.ZHIPU_API_KEY }}
+        run: python3 pipeline/pipeline.py --sources github,rss --limit 20 --verbose
+
+      - name: Validate articles
+        run: python3 hooks/validate_json.py knowledge/articles/
+
+      - name: Check quality
+        run: python3 hooks/check_quality.py knowledge/articles/
+
+      - name: Check for changes
+        id: changes
+        run: |
+          if git diff --quiet && git diff --cached --quiet && [ -z "$(git ls-files --others --exclude-standard)" ]; then
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
+            ARTICLE_COUNT=$(find knowledge/articles/ -name '*.json' 2>/dev/null | wc -l)
+            echo "article_count=${ARTICLE_COUNT}" >> "$GITHUB_OUTPUT"
+            echo "collect_date=$(date -u +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit and push
+        if: steps.changes.outputs.has_changes == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add knowledge/
+          git commit -m "chore: auto-collect ${ARTICLE_COUNT:-0} articles (${{ steps.changes.outputs.collect_date }})"
+          git push
