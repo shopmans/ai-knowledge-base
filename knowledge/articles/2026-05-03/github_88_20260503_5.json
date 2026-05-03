@@ -1,0 +1,26 @@
+{
+  "id": "e45f7552-2651-568f-a4c9-0abeca908ceb",
+  "title": "microsoft/mcp-for-beginners",
+  "url": "https://github.com/microsoft/mcp-for-beginners",
+  "source": "github",
+  "summary_zh": "微软开源的 Model Context Protocol (MCP) 入门教程，通过 .NET、Java、TypeScript、Rust 及 Python 等多语言的真实案例，指导开发者构建模块化、可扩展且安全的 AI 工作流。",
+  "highlights": [
+    "提供跨语言（.NET, Java, TS/JS, Rust, Python）的实战示例",
+    "涵盖从会话设置到服务编排的完整 AI 工作流构建",
+    "强调 AI 应用开发中的模块化、扩展性与安全性"
+  ],
+  "score": 88,
+  "tags": [
+    "MCP",
+    "Microsoft",
+    "AI-Workflow",
+    "Multi-language",
+    "Tutorial"
+  ],
+  "category": "tutorial",
+  "recommendation": "recommended",
+  "language": "Jupyter Notebook",
+  "stars": 15989,
+  "collected_at": "2026-05-03T08:50:32.691022+00:00",
+  "updated_at": "2026-05-03T08:54:19.153738+00:00"
+}

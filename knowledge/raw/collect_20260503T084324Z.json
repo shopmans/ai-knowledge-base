@@ -1,0 +1,82 @@
+[
+  {
+    "title": "langchain-ai/langchain",
+    "url": "https://github.com/langchain-ai/langchain",
+    "description": "The agent engineering platform",
+    "source": "github",
+    "stars": 135656,
+    "language": "Python",
+    "collected_at": "2026-05-03T08:43:11.035559+00:00"
+  },
+  {
+    "title": "hiyouga/LlamaFactory",
+    "url": "https://github.com/hiyouga/LlamaFactory",
+    "description": "Unified Efficient Fine-Tuning of 100+ LLMs & VLMs (ACL 2024)",
+    "source": "github",
+    "stars": 70849,
+    "language": "Python",
+    "collected_at": "2026-05-03T08:43:12.619138+00:00"
+  },
+  {
+    "title": "infiniflow/ragflow",
+    "url": "https://github.com/infiniflow/ragflow",
+    "description": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
+    "source": "github",
+    "stars": 79508,
+    "language": "Python",
+    "collected_at": "2026-05-03T08:43:14.457352+00:00"
+  },
+  {
+    "title": "microsoft/mcp-for-beginners",
+    "url": "https://github.com/microsoft/mcp-for-beginners",
+    "description": "This open-source curriculum introduces the fundamentals of Model Context Protocol (MCP) through real-world, cross-language examples in .NET, Java, TypeScript, JavaScript, Rust and Python. Designed for developers, it focuses on practical techniques for building modular, scalable, and secure AI workflows from session setup to service orchestration.",
+    "source": "github",
+    "stars": 15989,
+    "language": "Jupyter Notebook",
+    "collected_at": "2026-05-03T08:43:16.009609+00:00"
+  },
+  {
+    "title": "huggingface/transformers",
+    "url": "https://github.com/huggingface/transformers",
+    "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
+    "source": "github",
+    "stars": 160195,
+    "language": "Python",
+    "collected_at": "2026-05-03T08:43:17.567097+00:00"
+  },
+  {
+    "title": "A Centralised Approach to AI / LLM Agent Instruction Using Git Submodules",
+    "url": "https://www.appsoftware.com/blog/a-centralised-approach-to-ai-llm-agent-instruction-using-git-submodules",
+    "description": "Article URL: https://www.appsoftware.com/blog/a-centralised-approach-to-ai-llm-agent-instruction-using-git-submodules\nComments URL: https://news.ycombinator.com/item?id=46707348\nPoints: 1\n# Comments: 1\n]]>",
+    "source": "Hacker News — AI",
+    "collected_at": "2026-05-03T08:43:20.251066+00:00"
+  },
+  {
+    "title": "Ask HN: Why are so many rolling out their own AI/LLM agent sandboxing solution?",
+    "url": "https://news.ycombinator.com/item?id=46699324",
+    "description": "Seeing a lot of people running coding agents (Claude Code, etc.) in custom sandboxes Docker/VMs, firejail/bubblewrap, scripts that gate file or network access.Curious to know what's missing that makes people DIY this? And what would a \"good enough\" standard look like?\n\nComments URL: https://news.ycombinator.com/item?id=46699324\nPoints: 32\n# Comments: 18\n]]>",
+    "source": "Hacker News — AI",
+    "collected_at": "2026-05-03T08:43:20.251091+00:00"
+  },
+  {
+    "title": "Bending Emacs Episode 10: AI / LLM agent-shell [video]",
+    "url": "https://www.youtube.com/watch?v=R2Ucr3amgGg",
+    "description": "Article URL: https://www.youtube.com/watch?v=R2Ucr3amgGg\nComments URL: https://news.ycombinator.com/item?id=46668073\nPoints: 2\n# Comments: 0\n]]>",
+    "source": "Hacker News — AI",
+    "collected_at": "2026-05-03T08:43:20.251105+00:00"
+  },
+  {
+    "title": "Show HN: Mirror AI – LLM agent that takes action, not just chat",
+    "url": "https://themirrorai.com",
+    "description": "Hi HN,TL;DR  Mirror AI is a cross-platform desktop action oriented LLM.  \nInstead of just replying with text, it can run terminal commands, move files, hit APIs, send email/messages, schedule calendar events, query databases etc. - and chain those steps in one request.Why I built it  \nChatbots are great for answers but stop at the “OK, now go do it” moment.  \nI was copy-pasting between ChatGPT and my shell/IDE/Gmail far too often, so on red-eye flights I hacked a bridge that lets an LLM execute tasks under a permission layer. Friends asked for it, feature-creep happened, and here we are.What it can do today  \n- Files & Shell – read/write/rename/compress/execute files, run shell commands  \n- Productivity – draft + send Gmail, create Google Calendar events, read/write Notion, post to Slack/Discord/WhatsApp (via Beeper)  \n- Dev/Ops – query Postgres/Mongo, interact with GitHub, call AWS, curl any REST endpoint  \n- Search/GenAI – web search (Perplexity), summarise PDFs, generate images/video, keep long-term memory\n- Extensible via MCP (Modular Command Protocol) to add your own skills\n- And a lot moreExample prompt after you have added a few integrations (copy-paste):  Search Reddit for discussion on LangChain streaming, summarise it, email me the summary, and block 30 min in Calendar tomorrow.\n  \n  OR\n\n  Investigate my AWS account and tell me how to easily save money. Also check my MongoDB and make some proposition to optimize it.\n\n\nHow it works  \n- Desktop app (macOS, Windows, Linux) written in TS  \n- No SaaS backend: everything runs locally; outbound calls only hit the model provider you configure (OpenAI, Claude, local Ollama, etc.)  \n- Safety: every risky actions require approval from the userStatus & roadmap  \n- Free alpha download: https://themirrorai.com  (bring your own API keys)  \n- Planning to open-source core in the coming months after tidying up if there is enough interest\n- Up next: improved working memory, event-driven triggers for autonomous responses, and expanded integrations.Ask  \nKick the tires, try weird edge-cases, look for security holes, and tell me what hurts or what you wish it did. I will be in the thread checking the comments.Thanks!  \nSat\n\nComments URL: https://news.ycombinator.com/item?id=43812336\nPoints: 5\n# Comments: 4\n]]>",
+    "source": "Hacker News — AI",
+    "collected_at": "2026-05-03T08:43:20.251149+00:00"
+  },
+  {
+    "title": "fabrica - A terminal-based minimal coding agent harness",
+    "url": "https://github.com/Endi1/fabrica",
+    "description": "&lt;p&gt;&lt;a href=\"https://lobste.rs/s/vk8as6/fabrica_terminal_based_minimal_coding\"&gt;Comments&lt;/a&gt;&lt;/p&gt;",
+    "source": "Lobsters — AI/ML",
+    "collected_at": "2026-05-03T08:43:23.234975+00:00"
+  }
+]

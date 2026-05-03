@@ -1,0 +1,67 @@
+# RSS data sources for the AI knowledge base pipeline.
+#
+# Each entry:
+#   name      — Human-readable label (used in logs and provenance).
+#   url       — RSS / Atom feed URL.
+#   category  — Logical grouping: tech / research / company / chinese
+#   enabled   — Set to false to skip this source during collection.
+
+sources:
+  # ---- 综合技术 -------------------------------------------------------
+  - name: "Hacker News — AI"
+    url: "https://hnrss.org/newest?q=AI+LLM+agent&count=20"
+    category: tech
+    enabled: true
+
+  - name: "Hacker News — Best (AI/ML)"
+    url: "https://hnrss.org/best?q=machine+learning+OR+artificial+intelligence&count=15"
+    category: tech
+    enabled: true
+
+  - name: "Lobsters — AI/ML"
+    url: "https://lobste.rs/t/ai.rss"
+    category: tech
+    enabled: true
+
+  # ---- AI 研究 -------------------------------------------------------
+  - name: "arXiv — cs.AI (Artificial Intelligence)"
+    url: "https://rss.arxiv.org/rss/cs.AI"
+    category: research
+    enabled: false  # 每日更新量极大，按需开启
+
+  - name: "arXiv — cs.CL (Computation and Language)"
+    url: "https://rss.arxiv.org/rss/cs.CL"
+    category: research
+    enabled: false  # NLP/LLM 论文量大，按需开启
+
+  - name: "arXiv — cs.LG (Machine Learning)"
+    url: "https://rss.arxiv.org/rss/cs.LG"
+    category: research
+    enabled: false
+
+  # ---- 公司博客 -------------------------------------------------------
+  - name: "OpenAI Blog"
+    url: "https://openai.com/blog/rss.xml"
+    category: company
+    enabled: true
+
+  - name: "Anthropic"
+    url: "https://www.anthropic.com/feed.xml"
+    category: company
+    enabled: false  # 官方 RSS 地址待确认
+
+  - name: "Hugging Face Blog"
+    url: "https://huggingface.co/blog/feed.xml"
+    category: company
+    enabled: false  # 经常超时，按需开启
+
+  # ---- 中文社区 -------------------------------------------------------
+  - name: "机器之心"
+    url: "https://www.jiqizhixin.com/rss"
+    category: chinese
+    enabled: false  # 需确认 RSS 可用性
+
+  - name: "量子位"
+    url: "https://www.qbitai.com/rss"
+    category: chinese
+    enabled: false  # 需确认 RSS 可用性
