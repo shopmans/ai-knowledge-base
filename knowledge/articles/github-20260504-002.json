@@ -1,0 +1,26 @@
+{
+  "id": "github-20260504-002",
+  "title": "feder-cr/Jobs_Applier_AI_Agent_AIHawk",
+  "url": "https://github.com/feder-cr/Jobs_Applier_AI_Agent_AIHawk",
+  "source_url": "https://github.com/feder-cr/Jobs_Applier_AI_Agent_AIHawk",
+  "source": "github",
+  "summary_zh": "AIHawk是一款基于Python开发的自动化求职AI Agent。该项目利用人工智能技术，接管并自动化了繁琐的求职申请流程。它能够根据不同的职位需求，为用户动态量身定制简历和求职材料，实现海量岗位的精准、高效投递。凭借近3万的GitHub Star数，展现了极高的市场需求与实用价值，是求职者提升效率和AI Agent落地的优秀工具。",
+  "summary": "AIHawk是一款基于Python开发的自动化求职AI Agent。该项目利用人工智能技术，接管并自动化了繁琐的求职申请流程。它能够根据不同的职位需求，为用户动态量身定制简历和求职材料，实现海量岗位的精准、高效投递。凭借近3万的GitHub Star数，展现了极高的市场需求与实用价值，是求职者提升效率和AI Agent落地的优秀工具。",
+  "highlights": [
+    "高度自动化：接管繁琐的求职填写与投递流程，大幅节省人工时间。",
+    "个性化定制：利用AI针对不同岗位需求动态调整求职材料，提高匹配度。",
+    "极高人气：接近3万的Star数证明其完美契合当前就业市场的痛点，实用价值极高。"
+  ],
+  "score": 9,
+  "tags": [
+    "AI Agent",
+    "求职自动化",
+    "生产力工具"
+  ],
+  "category": "tool",
+  "recommendation": "recommended",
+  "status": "draft",
+  "timestamp": "2026-05-04T10:36:09.542248+00:00",
+  "collected_at": "2026-05-04T10:32:11.008963+00:00",
+  "updated_at": "2026-05-04T10:36:09.542248+00:00"
+}

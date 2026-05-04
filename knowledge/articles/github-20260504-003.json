@@ -1,0 +1,26 @@
+{
+  "id": "github-20260504-003",
+  "title": "owainlewis/awesome-artificial-intelligence",
+  "url": "https://github.com/owainlewis/awesome-artificial-intelligence",
+  "source_url": "https://github.com/owainlewis/awesome-artificial-intelligence",
+  "source": "github",
+  "summary_zh": "该项目是一个极受欢迎的人工智能学习资源库（Awesome List），系统整理了大量高质量的AI课程、专业书籍、视频讲座及前沿学术论文。它为不同阶段的学习者提供了一站式知识索引，涵盖了机器学习、深度学习等核心领域的理论资料，极大降低了获取优质AI资料的门槛，是构建完整AI知识体系的高效指南。",
+  "summary": "该项目是一个极受欢迎的人工智能学习资源库（Awesome List），系统整理了大量高质量的AI课程、专业书籍、视频讲座及前沿学术论文。它为不同阶段的学习者提供了一站式知识索引，涵盖了机器学习、深度学习等核心领域的理论资料，极大降低了获取优质AI资料的门槛，是构建完整AI知识体系的高效指南。",
+  "highlights": [
+    "一站式系统资源：全面涵盖从基础课程到前沿论文的AI学习路径。",
+    "高度社区认可：凭借超1.3万Star数，证明其在开发者与学习者中的核心参考价值。",
+    "降低资料筛选门槛：精心筛选并分类优质内容，帮助学习者免去繁琐的信息检索过程。"
+  ],
+  "score": 8,
+  "tags": [
+    "Awesome-List",
+    "AI-Education",
+    "Learning-Resources"
+  ],
+  "category": "tutorial",
+  "recommendation": "recommended",
+  "status": "draft",
+  "timestamp": "2026-05-04T10:36:09.542256+00:00",
+  "collected_at": "2026-05-04T10:32:11.008965+00:00",
+  "updated_at": "2026-05-04T10:36:09.542256+00:00"
+}

@@ -1,0 +1,55 @@
+[
+  {
+    "id": "github-20260504-001",
+    "title": "AMAI-GmbH/AI-Expert-Roadmap",
+    "url": "https://github.com/AMAI-GmbH/AI-Expert-Roadmap",
+    "score": 8,
+    "category": "tutorial",
+    "tags": [
+      "AI-Roadmap",
+      "Machine-Learning",
+      "Career-Guide",
+      "Data-Science"
+    ],
+    "timestamp": "2026-05-04T08:14:27.305184+00:00"
+  },
+  {
+    "id": "github-20260504-002",
+    "title": "feder-cr/Jobs_Applier_AI_Agent_AIHawk",
+    "url": "https://github.com/feder-cr/Jobs_Applier_AI_Agent_AIHawk",
+    "score": 9,
+    "category": "tool",
+    "tags": [
+      "AI Agent",
+      "自动化求职",
+      "LLM应用"
+    ],
+    "timestamp": "2026-05-04T08:14:27.305272+00:00"
+  },
+  {
+    "id": "github-20260504-003",
+    "title": "owainlewis/awesome-artificial-intelligence",
+    "url": "https://github.com/owainlewis/awesome-artificial-intelligence",
+    "score": 8,
+    "category": "tutorial",
+    "tags": [
+      "资源合集",
+      "人工智能",
+      "学习路线"
+    ],
+    "timestamp": "2026-05-04T08:14:27.305282+00:00"
+  },
+  {
+    "id": "github-20260504-004",
+    "title": "MarcoDSmit/Scoping-Review",
+    "url": "https://github.com/MarcoDSmit/Scoping-Review",
+    "score": 6,
+    "category": "research",
+    "tags": [
+      "医学人工智能",
+      "文献综述",
+      "临床微生物学"
+    ],
+    "timestamp": "2026-05-04T10:36:09.542262+00:00"
+  }
+]
