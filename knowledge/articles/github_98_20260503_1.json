@@ -1,0 +1,28 @@
+{
+  "id": "github-20260503-001",
+  "title": "huggingface/transformers",
+  "url": "https://github.com/huggingface/transformers",
+  "source_url": "https://github.com/huggingface/transformers",
+  "source": "github",
+  "summary_zh": "Hugging Face Transformers 是先进的机器学习模型定义框架，支持文本、视觉、音频和多模态等SOTA模型的训练与推理。它极大地简化了前沿AI模型的使用门槛，已成为现代深度学习开发不可或缺的基础设施。",
+  "summary": "Hugging Face Transformers 是先进的机器学习模型定义框架，支持文本、视觉、音频和多模态等SOTA模型的训练与推理。它极大地简化了前沿AI模型的使用门槛，已成为现代深度学习开发不可或缺的基础设施。",
+  "highlights": [
+    "支持文本、视觉、音频及多模态等海量前沿模型",
+    "无缝兼容 PyTorch、TensorFlow 和 JAX 三大主流框架",
+    "拥有极高的社区活跃度，是当前AI开发的事实标准"
+  ],
+  "score": 10,
+  "tags": [
+    "ml",
+    "ai",
+    "python"
+  ],
+  "status": "draft",
+  "timestamp": "2026-05-03T14:46:25.733415+00:00",
+  "category": "framework",
+  "recommendation": "must-read",
+  "language": "Python",
+  "stars": 160205,
+  "collected_at": "2026-05-03T14:43:05.683548+00:00",
+  "updated_at": "2026-05-03T14:46:25.733415+00:00"
+}

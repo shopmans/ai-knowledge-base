@@ -10,5 +10,13 @@ python-dotenv>=1.0.0
 # YAML 配置解析（RSS 源配置）
 pyyaml>=6.0
 
-# OpenAI SDK（可选，作为 httpx 的替代）
-# openai>=1.30.0
+# LLM 客户端
+openai>=1.0.0
+
+# LangGraph 工作流引擎
+langgraph>=0.2.0
+langchain-core>=0.3.0
+
+# 测试
+pytest>=8.0.0
+pytest-asyncio>=0.23.0

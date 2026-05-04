@@ -1,0 +1,26 @@
+{
+  "id": "hacker-20260503-009",
+  "title": "A Centralised Approach to AI / LLM Agent Instruction Using Git Submodules",
+  "url": "https://www.appsoftware.com/blog/a-centralised-approach-to-ai-llm-agent-instruction-using-git-submodules",
+  "source_url": "https://www.appsoftware.com/blog/a-centralised-approach-to-ai-llm-agent-instruction-using-git-submodules",
+  "source": "Hacker News — AI",
+  "summary_zh": "该文章探讨了使用Git子模块集中管理AI/LLM代理指令的方法，通过版本控制系统实现提示词和指令集的标准化维护与团队协作共享。",
+  "summary": "该文章探讨了使用Git子模块集中管理AI/LLM代理指令的方法，通过版本控制系统实现提示词和指令集的标准化维护与团队协作共享。",
+  "highlights": [
+    "利用Git子模块实现LLM代理指令的集中化管理和版本控制",
+    "为团队协作提供可复用的AI指令集标准化方案"
+  ],
+  "score": 6,
+  "tags": [
+    "ai",
+    "devops"
+  ],
+  "status": "draft",
+  "timestamp": "2026-05-03T14:46:25.733422+00:00",
+  "category": "tool",
+  "recommendation": "optional",
+  "language": "",
+  "stars": 0,
+  "collected_at": "2026-05-03T14:43:08.089625+00:00",
+  "updated_at": "2026-05-03T14:46:25.733422+00:00"
+}

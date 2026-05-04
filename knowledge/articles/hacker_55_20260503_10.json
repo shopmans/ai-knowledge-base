@@ -1,0 +1,26 @@
+{
+  "id": "hacker-20260503-010",
+  "title": "Bending Emacs Episode 10: AI / LLM agent-shell [video]",
+  "url": "https://www.youtube.com/watch?v=R2Ucr3amgGg",
+  "source_url": "https://www.youtube.com/watch?v=R2Ucr3amgGg",
+  "source": "Hacker News — AI",
+  "summary_zh": "这是一个关于在Emacs编辑器中集成AI/LLM功能的视频教程，展示了agent-shell工具的使用方法。",
+  "summary": "这是一个关于在Emacs编辑器中集成AI/LLM功能的视频教程，展示了agent-shell工具的使用方法。",
+  "highlights": [
+    "在Emacs中集成AI/LLM代理功能",
+    "agent-shell工具的介绍与演示"
+  ],
+  "score": 6,
+  "tags": [
+    "ai",
+    "linux"
+  ],
+  "status": "draft",
+  "timestamp": "2026-05-03T14:46:25.733433+00:00",
+  "category": "tutorial",
+  "recommendation": "optional",
+  "language": "",
+  "stars": 0,
+  "collected_at": "2026-05-03T14:43:08.089666+00:00",
+  "updated_at": "2026-05-03T14:46:25.733433+00:00"
+}

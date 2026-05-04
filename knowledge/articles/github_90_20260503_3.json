@@ -1,0 +1,27 @@
+{
+  "id": "github-20260503-003",
+  "title": "langchain-ai/langchain",
+  "url": "https://github.com/langchain-ai/langchain",
+  "source_url": "https://github.com/langchain-ai/langchain",
+  "source": "github",
+  "summary_zh": "LangChain 是一个用于开发由大语言模型驱动的应用程序的开源框架，目前定位为智能体工程平台。它提供了一套标准化的接口、组件和工具链，极大地简化了AI应用和智能体的构建、编排与部署过程。",
+  "summary": "LangChain 是一个用于开发由大语言模型驱动的应用程序的开源框架，目前定位为智能体工程平台。它提供了一套标准化的接口、组件和工具链，极大地简化了AI应用和智能体的构建、编排与部署过程。",
+  "highlights": [
+    "大模型应用开发的事实标准框架，拥有极为庞大的开源社区和丰富的集成生态。",
+    "全面支持智能体、RAG（检索增强生成）以及多种数据源的连接与交互。",
+    "与LangSmith等生态工具深度结合，提供完善的追踪、测试和评估能力。"
+  ],
+  "score": 9,
+  "tags": [
+    "ai",
+    "architecture"
+  ],
+  "status": "draft",
+  "timestamp": "2026-05-03T14:46:25.733375+00:00",
+  "category": "framework",
+  "recommendation": "must-read",
+  "language": "Python",
+  "stars": 135676,
+  "collected_at": "2026-05-03T14:42:57.258008+00:00",
+  "updated_at": "2026-05-03T14:46:25.733375+00:00"
+}

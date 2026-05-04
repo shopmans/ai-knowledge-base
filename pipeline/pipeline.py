@@ -393,6 +393,152 @@ def step_analyze(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
 _VALID_CATEGORIES = {"framework", "tool", "research", "tutorial", "news"}
 _VALID_RECOMMENDATIONS = {"must-read", "recommended", "optional"}
 
+_STANDARD_TAGS: set[str] = {
+    "backend", "frontend", "devops", "database", "security",
+    "architecture", "algorithm", "testing", "performance",
+    "ai", "ml", "networking", "cloud", "mobile", "linux",
+    "python", "java", "go", "rust", "javascript", "typescript",
+    "kubernetes", "docker", "ci-cd", "monitoring", "design-pattern",
+    "distributed-systems", "microservices", "api", "storage",
+    "concurrency", "caching", "messaging", "web", "data-structure",
+    "compiler", "os", "blockchain", "iot", "embedded",
+}
+
+_TAG_ALIASES: dict[str, str] = {
+    "deep-learning": "ml",
+    "machine-learning": "ml",
+    "machine learning": "ml",
+    "机器学习": "ml",
+    "深度学习": "ml",
+    "neural-network": "ml",
+    "神经网络": "ml",
+    "nlp": "ai",
+    "natural language processing": "ai",
+    "llm": "ai",
+    "large language model": "ai",
+    "大语言模型": "ai",
+    "computer-vision": "ai",
+    "computer vision": "ai",
+    "计算机视觉": "ai",
+    "rag": "ai",
+    "retrieval augmented generation": "ai",
+    "agent": "ai",
+    "ai agent": "ai",
+    "agents": "ai",
+    "mcp": "ai",
+    "model context protocol": "ai",
+    "fine-tuning": "ml",
+    "fine tuning": "ml",
+    "微调": "ml",
+    "rlhf": "ml",
+    "transformer": "ml",
+    "diffusion": "ai",
+    "generative-ai": "ai",
+    "生成式ai": "ai",
+    "prompt-engineering": "ai",
+    "提示工程": "ai",
+    "prompt": "ai",
+    "gpt": "ai",
+    "openai": "ai",
+    "claude": "ai",
+    "huggingface": "ai",
+    "langchain": "ai",
+    "embedding": "ai",
+    "向量数据库": "database",
+    "vector database": "database",
+    "pytorch": "python",
+    "tensorflow": "python",
+    "jax": "python",
+    "react": "frontend",
+    "vue": "frontend",
+    "node": "frontend",
+    "nodejs": "frontend",
+    "kubernetes": "devops",
+    "docker": "devops",
+    "container": "devops",
+    "容器": "devops",
+    "ci/cd": "ci-cd",
+    "devops": "devops",
+    "serverless": "cloud",
+    "cloud-native": "cloud",
+    "云原生": "cloud",
+    "微服务": "microservices",
+    "microservice": "microservices",
+    "rest": "api",
+    "graphql": "api",
+    "grpc": "api",
+    "http": "networking",
+    "tcp": "networking",
+    "kafka": "messaging",
+    "消息队列": "messaging",
+    "redis": "caching",
+    "缓存": "caching",
+    "负载均衡": "networking",
+    "监控": "monitoring",
+    "日志": "monitoring",
+    "链路追踪": "monitoring",
+    "security": "security",
+    "安全": "security",
+    "authentication": "security",
+    "encryption": "security",
+    "sandboxing": "security",
+    "testing": "testing",
+    "测试": "testing",
+    "版本控制": "devops",
+    "git": "devops",
+    "emacs": "linux",
+    "editor": "linux",
+    "cli": "linux",
+    "终端工具": "linux",
+    "开发者工具": "devops",
+    "ai编码助手": "ai",
+    "编码代理": "ai",
+    "framework": "architecture",
+    "frameworks": "architecture",
+    "开源框架": "architecture",
+    "ai工程": "ai",
+    "ai integration": "ai",
+    "ai-integration": "ai",
+    "desktop app": "frontend",
+    "automation": "devops",
+    "automation": "devops",
+    "discussion": "architecture",
+    "multimodal": "ai",
+    "多模态": "ai",
+    "知识库": "database",
+    "ai工作流": "ai",
+    "多语言教程": "ai",
+    "微软开源": "ai",
+}
+
+
+def _normalise_tags(raw_tags: list[str], max_tags: int = 5) -> list[str]:
+    """Map raw LLM-generated tags to the standard tag set.
+
+    Args:
+        raw_tags: Tags produced by the LLM analysis step.
+        max_tags: Maximum number of tags to keep.
+
+    Returns:
+        Deduplicated list of standard tags.
+    """
+    mapped: list[str] = []
+    seen: set[str] = set()
+
+    for tag in raw_tags:
+        key = tag.lower().strip()
+        std = _TAG_ALIASES.get(key)
+        if std is None:
+            if key in _STANDARD_TAGS:
+                std = key
+            else:
+                continue
+        if std not in seen:
+            seen.add(std)
+            mapped.append(std)
+
+    return mapped[:max_tags]
+
 _SOURCE_ALIASES: dict[str, str] = {
     "github": "github",
     "Hacker News — AI": "hacker",
@@ -410,17 +556,20 @@ _SOURCE_ALIASES: dict[str, str] = {
 }
 
 
-def _generate_id(item: dict[str, Any]) -> str:
-    """Generate a deterministic ID from URL or title.
+def _generate_id(item: dict[str, Any], seq: int = 1) -> str:
+    """Generate a deterministic ID from source, date, and sequence number.
 
     Args:
         item: An analysed item dict.
+        seq: Sequence number within the collection run.
 
     Returns:
-        A UUID5 string derived from the item's URL.
+        ID in format ``{source}-{YYYYMMDD}-{NNN}``.
     """
-    key = item.get("url") or item.get("title") or uuid.uuid4().hex
-    return str(uuid.uuid5(uuid.NAMESPACE_URL, key))
+    source = _SOURCE_ALIASES.get(item.get("source", ""), item.get("source", "unknown"))
+    source = re.sub(r"[^a-z0-9]", "", source.lower()) or "unknown"
+    date_str = datetime.now(timezone.utc).strftime("%Y%m%d")
+    return f"{source}-{date_str}-{seq:03d}"
 
 
 def step_organize(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -434,21 +583,28 @@ def step_organize(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
     """
     logger.info("Step 3 — Organize (%d items)", len(items))
 
-    seen_ids: set[str] = set()
-    articles: list[dict[str, Any]] = []
+    seen_urls: set[str] = set()
+    deduped: list[dict[str, Any]] = []
 
     for item in items:
-        aid = _generate_id(item)
-        if aid in seen_ids:
+        url = item.get("url", "")
+        if url in seen_urls:
             logger.debug("Skipping duplicate: %s", item.get("title", ""))
             continue
-        seen_ids.add(aid)
+        seen_urls.add(url)
+        deduped.append(item)
+
+    articles: list[dict[str, Any]] = []
+
+    for seq, item in enumerate(deduped, start=1):
+        aid = _generate_id(item, seq=seq)
 
         analysis = item.get("analysis", {})
-        score = analysis.get("score", 0)
-        if not isinstance(score, (int, float)):
-            score = 0
-        score = max(0, min(100, int(score)))
+        raw_score = analysis.get("score", 0)
+        if not isinstance(raw_score, (int, float)):
+            raw_score = 0
+        raw_score = max(0, min(100, int(raw_score)))
+        score = max(1, min(10, round(raw_score / 10)))
 
         category = analysis.get("category", "news")
         if category not in _VALID_CATEGORIES:
@@ -462,25 +618,35 @@ def step_organize(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
         if not isinstance(highlights, list):
             highlights = [str(highlights)]
 
-        tags = analysis.get("tags", [])
-        if not isinstance(tags, list):
-            tags = [str(tags)]
+        raw_tags = analysis.get("tags", [])
+        if not isinstance(raw_tags, list):
+            raw_tags = [str(raw_tags)]
+        tags = _normalise_tags(raw_tags)
+        if not tags:
+            tags = ["ai"]
+
+        summary_zh = analysis.get("summary_zh", "")
+
+        now_iso = datetime.now(timezone.utc).isoformat()
 
         article = {
             "id": aid,
             "title": item.get("title", ""),
-            "url": item.get("url", ""),
+            "source_url": item.get("url", ""),
             "source": item.get("source", ""),
-            "summary_zh": analysis.get("summary_zh", ""),
+            "summary": summary_zh,
+            "summary_zh": summary_zh,
             "highlights": highlights,
             "score": score,
             "tags": tags,
             "category": category,
             "recommendation": recommendation,
+            "status": "draft",
+            "timestamp": now_iso,
             "language": item.get("language", ""),
             "stars": item.get("stars", 0),
             "collected_at": item.get("collected_at", ""),
-            "updated_at": datetime.now(timezone.utc).isoformat(),
+            "updated_at": now_iso,
         }
 
         articles.append(article)
@@ -488,7 +654,7 @@ def step_organize(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
     articles.sort(key=lambda a: a["score"], reverse=True)
 
     logger.info(
-        "Organized: %d unique articles (avg score %.0f)",
+        "Organized: %d unique articles (avg score %.1f)",
         len(articles),
         sum(a["score"] for a in articles) / max(len(articles), 1),
     )
@@ -513,16 +679,14 @@ def step_save(articles: list[dict[str, Any]]) -> list[Path]:
         List of written file paths.
     """
     logger.info("Step 4 — Save (%d articles)", len(articles))
-    now = datetime.now(timezone.utc)
-    day_dir = ARTICLES_DIR / now.strftime("%Y-%m-%d")
-    day_dir.mkdir(parents=True, exist_ok=True)
+    ARTICLES_DIR.mkdir(parents=True, exist_ok=True)
 
-    date_str = now.strftime("%Y%m%d")
+    date_str = datetime.now(timezone.utc).strftime("%Y%m%d")
     written: list[Path] = []
     for seq, article in enumerate(articles, start=1):
         source = _SOURCE_ALIASES.get(article.get("source", ""), article.get("source", "unknown"))
         filename = f"{source}_{article['score']}_{date_str}_{seq}.json"
-        path = day_dir / filename
+        path = ARTICLES_DIR / filename
         path.write_text(
             json.dumps(article, ensure_ascii=False, indent=2),
             encoding="utf-8",

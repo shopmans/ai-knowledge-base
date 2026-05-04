@@ -1,0 +1,27 @@
+{
+  "id": "hacker-20260503-006",
+  "title": "Show HN: Mirror AI – LLM agent that takes action, not just chat",
+  "url": "https://themirrorai.com",
+  "source_url": "https://themirrorai.com",
+  "source": "Hacker News — AI",
+  "summary_zh": "Mirror AI 是一款跨平台的桌面端 LLM 代理工具，不仅能回答问题，还能通过执行终端命令和连接外部应用来自动化实际任务。该工具完全本地运行，支持 MCP 扩展，旨在解决用户频繁在不同工具间复制粘贴的痛点。",
+  "summary": "Mirror AI 是一款跨平台的桌面端 LLM 代理工具，不仅能回答问题，还能通过执行终端命令和连接外部应用来自动化实际任务。该工具完全本地运行，支持 MCP 扩展，旨在解决用户频繁在不同工具间复制粘贴的痛点。",
+  "highlights": [
+    "将 LLM 响应转化为实际操作，支持 Shell 命令、文件管理以及 Gmail、Notion、AWS 等多平台集成",
+    "纯本地运行架构，无 SaaS 后端，数据安全有保障，支持 OpenAI、Claude 或本地 Ollama 等多种模型"
+  ],
+  "score": 8,
+  "tags": [
+    "ai",
+    "frontend",
+    "devops"
+  ],
+  "status": "draft",
+  "timestamp": "2026-05-03T14:46:25.733439+00:00",
+  "category": "tool",
+  "recommendation": "recommended",
+  "language": "",
+  "stars": 0,
+  "collected_at": "2026-05-03T14:43:08.089710+00:00",
+  "updated_at": "2026-05-03T14:46:25.733439+00:00"
+}

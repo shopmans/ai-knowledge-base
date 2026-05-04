@@ -1,0 +1,27 @@
+{
+  "id": "hacker-20260503-007",
+  "title": "Ask HN: Why are so many rolling out their own AI/LLM agent sandboxing solution?",
+  "url": "https://news.ycombinator.com/item?id=46699324",
+  "source_url": "https://news.ycombinator.com/item?id=46699324",
+  "source": "Hacker News — AI",
+  "summary_zh": "这篇Hacker News讨论帖探讨了为何许多开发者选择自己构建AI/LLM编程智能体的沙盒隔离方案，反映了当前AI安全工具链的缺失，并试图定义一个「足够好」的标准沙盒应具备哪些特性。",
+  "summary": "这篇Hacker News讨论帖探讨了为何许多开发者选择自己构建AI/LLM编程智能体的沙盒隔离方案，反映了当前AI安全工具链的缺失，并试图定义一个「足够好」的标准沙盒应具备哪些特性。",
+  "highlights": [
+    "Reveals the lack of standardized, out-of-the-box sandboxing solutions for autonomous AI coding agents.",
+    "Highlights the security risks and practical needs driving developers to DIY custom isolation environments (Docker, VMs, firejail)."
+  ],
+  "score": 7,
+  "tags": [
+    "ai",
+    "security",
+    "architecture"
+  ],
+  "status": "draft",
+  "timestamp": "2026-05-03T14:46:25.733427+00:00",
+  "category": "news",
+  "recommendation": "recommended",
+  "language": "",
+  "stars": 0,
+  "collected_at": "2026-05-03T14:43:08.089651+00:00",
+  "updated_at": "2026-05-03T14:46:25.733427+00:00"
+}

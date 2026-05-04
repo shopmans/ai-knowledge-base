@@ -1,0 +1,27 @@
+{
+  "id": "lobsters-20260503-008",
+  "title": "fabrica - A terminal-based minimal coding agent harness",
+  "url": "https://github.com/Endi1/fabrica",
+  "source_url": "https://github.com/Endi1/fabrica",
+  "source": "Lobsters — AI/ML",
+  "summary_zh": "fabrica是一个基于终端的极简编码代理工具框架，旨在提供轻量级的方式来管理和运行AI编码助手，适合偏好命令行工作流的开发者使用。",
+  "summary": "fabrica是一个基于终端的极简编码代理工具框架，旨在提供轻量级的方式来管理和运行AI编码助手，适合偏好命令行工作流的开发者使用。",
+  "highlights": [
+    "基于终端的极简设计，专注于编码代理的运行和管理",
+    "作为编码代理的harness，提供了轻量级的AI辅助开发工作流"
+  ],
+  "score": 7,
+  "tags": [
+    "ai",
+    "linux",
+    "devops"
+  ],
+  "status": "draft",
+  "timestamp": "2026-05-03T14:46:25.733443+00:00",
+  "category": "tool",
+  "recommendation": "optional",
+  "language": "",
+  "stars": 0,
+  "collected_at": "2026-05-03T14:43:08.663439+00:00",
+  "updated_at": "2026-05-03T14:46:25.733443+00:00"
+}
