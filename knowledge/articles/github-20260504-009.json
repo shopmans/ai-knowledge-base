@@ -1,0 +1,26 @@
+{
+  "id": "github-20260504-009",
+  "title": "norvig/paip-lisp",
+  "url": "https://github.com/norvig/paip-lisp",
+  "source_url": "https://github.com/norvig/paip-lisp",
+  "source": "github",
+  "summary_zh": "这是 Peter Norvig 经典著作《人工智能编程范式》（PAIP）的官方源码库。项目使用 Common Lisp 编写，深度展示了如何运用 Lisp 语言及其强大的函数式编程特性解决经典 AI 问题。代码涵盖了搜索算法、逻辑推理、ELIZA、自然语言处理等核心范式，是学习符号人工智能、理解 AI 发展历史及掌握高级编程范式的绝佳资源。",
+  "summary": "这是 Peter Norvig 经典著作《人工智能编程范式》（PAIP）的官方源码库。项目使用 Common Lisp 编写，深度展示了如何运用 Lisp 语言及其强大的函数式编程特性解决经典 AI 问题。代码涵盖了搜索算法、逻辑推理、ELIZA、自然语言处理等核心范式，是学习符号人工智能、理解 AI 发展历史及掌握高级编程范式的绝佳资源。",
+  "highlights": [
+    "由 AI 领域泰斗 Peter Norvig 编写，代码质量极高且充满编程智慧",
+    "涵盖搜索、推理、NLP 等经典符号人工智能算法的完整实现",
+    "不仅是算法库，更是学习 Common Lisp 和高级编程技巧的实战教材"
+  ],
+  "score": 10,
+  "tags": [
+    "Common-Lisp",
+    "经典AI算法",
+    "符号AI"
+  ],
+  "category": "tutorial",
+  "recommendation": "recommended",
+  "status": "draft",
+  "timestamp": "2026-05-04T12:22:45.811809+00:00",
+  "collected_at": "2026-05-04T12:03:22.267029+00:00",
+  "updated_at": "2026-05-04T12:22:45.811809+00:00"
+}

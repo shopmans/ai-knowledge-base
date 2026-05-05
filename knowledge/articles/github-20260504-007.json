@@ -1,0 +1,26 @@
+{
+  "id": "github-20260504-007",
+  "title": "olistic/warriorjs",
+  "url": "https://github.com/olistic/warriorjs",
+  "source_url": "https://github.com/olistic/warriorjs",
+  "source": "github",
+  "summary_zh": "WarriorJS 是一款结合编程与人工智能元素的回合制策略游戏。玩家通过编写 JavaScript/TypeScript 代码来控制游戏中的勇士，使其在各种复杂地形中探索、战斗并解救俘虏。该项目不仅是一个极具趣味性的通关游戏，更是一个优秀的编程学习平台，能有效帮助开发者锻炼算法思维、熟练掌握 JS/TS 语法，并体验基础的 AI 逻辑与状态机编写。",
+  "summary": "WarriorJS 是一款结合编程与人工智能元素的回合制策略游戏。玩家通过编写 JavaScript/TypeScript 代码来控制游戏中的勇士，使其在各种复杂地形中探索、战斗并解救俘虏。该项目不仅是一个极具趣味性的通关游戏，更是一个优秀的编程学习平台，能有效帮助开发者锻炼算法思维、熟练掌握 JS/TS 语法，并体验基础的 AI 逻辑与状态机编写。",
+  "highlights": [
+    "游戏化学习：将枯燥的代码练习转化为有趣的塔防地牢探险游戏，极大提升了编程学习兴趣。",
+    "现代技术栈：原生支持 TypeScript 和现代 JavaScript，非常适合前端开发者进行算法与逻辑训练。",
+    "社区高度认可：拥有近万的 GitHub Star，玩法经典且经过大量开发者验证，项目质量有保障。"
+  ],
+  "score": 8,
+  "tags": [
+    "编程游戏",
+    "TypeScript",
+    "算法训练"
+  ],
+  "category": "tutorial",
+  "recommendation": "recommended",
+  "status": "draft",
+  "timestamp": "2026-05-04T12:22:45.811801+00:00",
+  "collected_at": "2026-05-04T12:03:22.267027+00:00",
+  "updated_at": "2026-05-04T12:22:45.811801+00:00"
+}

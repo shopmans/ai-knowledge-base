@@ -1,0 +1,26 @@
+{
+  "id": "github-20260504-011",
+  "title": "guofei9987/scikit-opt",
+  "url": "https://github.com/guofei9987/scikit-opt",
+  "source_url": "https://github.com/guofei9987/scikit-opt",
+  "source": "github",
+  "summary_zh": "scikit-opt 是一个强大的 Python 启发式优化算法库。它集成了遗传算法（GA）、粒子群优化（PSO）、模拟退火（SA）、蚁群算法（ACO）、差分进化（DE）等多种经典的演化计算与群体智能算法。该项目提供了类似 scikit-learn 风格的统一且简洁的 API，支持连续优化及离散的旅行商问题（TSP）求解，大幅降低了算法实现门槛，是学术研究和工业落地中解决复杂优化问题的优质选择。",
+  "summary": "scikit-opt 是一个强大的 Python 启发式优化算法库。它集成了遗传算法（GA）、粒子群优化（PSO）、模拟退火（SA）、蚁群算法（ACO）、差分进化（DE）等多种经典的演化计算与群体智能算法。该项目提供了类似 scikit-learn 风格的统一且简洁的 API，支持连续优化及离散的旅行商问题（TSP）求解，大幅降低了算法实现门槛，是学术研究和工业落地中解决复杂优化问题的优质选择。",
+  "highlights": [
+    "算法丰富：全面覆盖 GA、PSO、SA、ACO、DE 等十余种主流启发式优化算法。",
+    "极简易用：提供高度封装的统一 API 接口，几行代码即可完成复杂算法的调用与调试。",
+    "生态成熟：拥有超过 6500 个 Star，经过大量社区用户测试，代码健壮，文档完善。"
+  ],
+  "score": 9,
+  "tags": [
+    "启发式算法",
+    "群体智能",
+    "Python优化库"
+  ],
+  "category": "framework",
+  "recommendation": "recommended",
+  "status": "draft",
+  "timestamp": "2026-05-04T12:22:45.811818+00:00",
+  "collected_at": "2026-05-04T12:03:22.267032+00:00",
+  "updated_at": "2026-05-04T12:22:45.811818+00:00"
+}

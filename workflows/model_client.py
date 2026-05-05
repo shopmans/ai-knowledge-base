@@ -48,6 +48,9 @@ def chat(
     client = get_client()
     model_name = model or os.getenv("LLM_MODEL", "deepseek-chat")
 
+    base_url = str(client.base_url).rstrip("/")
+    print(f"[chat] POST {base_url}/chat/completions  model={model_name}  prompt={len(prompt)}chars", flush=True)
+
     response = client.chat.completions.create(
         model=model_name,
         messages=[
@@ -63,6 +66,8 @@ def chat(
         "prompt_tokens": response.usage.prompt_tokens if response.usage else 0,
         "completion_tokens": response.usage.completion_tokens if response.usage else 0,
     }
+
+    print(f"[chat] response: len={len(text)}  usage={usage}  text={text[:200]!r}", flush=True)
 
     return text, usage
 
@@ -118,7 +123,8 @@ def chat_json(
             except json.JSONDecodeError:
                 continue
 
-    # 三种都失败 —— 抛原始异常
+    # 三种都失败 —— 打印原始文本用于调试，然后抛异常
+    print(f"[chat_json] JSON 解析失败，原始响应（前500字符）: {cleaned[:500]!r}")
     return json.loads(cleaned), usage
 
 

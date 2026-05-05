@@ -275,7 +275,17 @@ _REVIEW_PROMPT = """\
 }}
 
 待审核条目:
-{articles_json}"""
+{article_json}"""
+
+
+def _review_one(article: dict, cost_tracker: dict) -> tuple[dict, dict]:
+    prompt = _REVIEW_PROMPT.format(
+        article_json=json.dumps(article, ensure_ascii=False, indent=2),
+    )
+    result, usage = chat_json(prompt, system=_REVIEW_SYSTEM)
+    result = _ensure_dict(result)
+    cost_tracker = accumulate_usage(cost_tracker, usage)
+    return result, cost_tracker
 
 
 def review_node(state: KBState) -> dict:
@@ -285,7 +295,6 @@ def review_node(state: KBState) -> dict:
     cost_tracker = state.get("cost_tracker", {})
     iteration = state.get("iteration", 0)
 
-    # iteration >= 2 强制通过，防止无限循环
     if iteration >= 2:
         print("[ReviewNode] iteration >= 2，强制通过")
         return {
@@ -295,24 +304,36 @@ def review_node(state: KBState) -> dict:
             "cost_tracker": cost_tracker,
         }
 
-    prompt = _REVIEW_PROMPT.format(
-        articles_json=json.dumps(articles, ensure_ascii=False, indent=2),
-    )
-    try:
-        result, usage = chat_json(prompt, system=_REVIEW_SYSTEM)
-        result = _ensure_dict(result)
-        cost_tracker = accumulate_usage(cost_tracker, usage)
-        passed = bool(result.get("passed", False))
-        feedback = result.get("feedback", "质量合格")
-        overall = result.get("overall_score", 0)
-    except Exception as exc:
-        print(f"[ReviewNode] 审核调用失败，默认通过: {exc}")
-        passed = True
-        feedback = f"审核异常自动通过: {exc}"
-        overall = 0
+    total = len(articles)
+    passed_count = 0
+    fail_feedbacks: list[str] = []
+    scores: list[float] = []
+
+    for i, article in enumerate(articles):
+        try:
+            result, cost_tracker = _review_one(article, cost_tracker)
+            item_passed = bool(result.get("passed", False))
+            overall = float(result.get("overall_score", 0))
+            feedback = result.get("feedback", "质量合格")
+        except Exception as exc:
+            print(f"[ReviewNode] 条目 {i+1}/{total} 审核失败: {exc}")
+            item_passed = True
+            overall = 0
+            feedback = f"审核异常自动通过: {exc}"
+
+        if item_passed:
+            passed_count += 1
+        else:
+            fail_feedbacks.append(f"[{article.get('id', i+1)}] {feedback}")
+        scores.append(overall)
+        print(f"[ReviewNode] 条目 {i+1}/{total} {'通过' if item_passed else '未通过'} (score={overall:.2f})", flush=True)
+
+    avg_score = sum(scores) / len(scores) if scores else 0
+    passed = passed_count == total
+    feedback = "质量合格" if passed else "; ".join(fail_feedbacks)
 
     status = "通过" if passed else "未通过"
-    print(f"[ReviewNode] 审核{status} (score={overall:.2f}, iter={iteration})")
+    print(f"[ReviewNode] 整体{status} ({passed_count}/{total} passed, avg={avg_score:.2f}, iter={iteration})")
     return {
         "review_passed": passed,
         "review_feedback": feedback,

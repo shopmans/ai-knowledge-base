@@ -51,5 +51,180 @@
       "临床微生物学"
     ],
     "timestamp": "2026-05-04T10:36:09.542262+00:00"
+  },
+  {
+    "id": "github-20260504-004",
+    "title": "tangyudi/Ai-Learn",
+    "url": "https://github.com/tangyudi/Ai-Learn",
+    "score": 9,
+    "category": "tutorial",
+    "tags": [
+      "AI学习路线",
+      "机器学习",
+      "深度学习",
+      "实战项目",
+      "开源教程"
+    ],
+    "timestamp": "2026-05-04T12:22:45.811787+00:00"
+  },
+  {
+    "id": "github-20260504-005",
+    "title": "steven2358/awesome-generative-ai",
+    "url": "https://github.com/steven2358/awesome-generative-ai",
+    "score": 8,
+    "category": "tool",
+    "tags": [
+      "awesome-list",
+      "generative-ai",
+      "resource-aggregation"
+    ],
+    "timestamp": "2026-05-04T12:22:45.811792+00:00"
+  },
+  {
+    "id": "github-20260504-006",
+    "title": "Baiyuetribe/paper2gui",
+    "url": "https://github.com/Baiyuetribe/paper2gui",
+    "score": 8,
+    "category": "tool",
+    "tags": [
+      "模型部署",
+      "图形界面",
+      "零代码"
+    ],
+    "timestamp": "2026-05-04T12:22:45.811797+00:00"
+  },
+  {
+    "id": "github-20260504-007",
+    "title": "olistic/warriorjs",
+    "url": "https://github.com/olistic/warriorjs",
+    "score": 8,
+    "category": "tutorial",
+    "tags": [
+      "编程游戏",
+      "TypeScript",
+      "算法训练"
+    ],
+    "timestamp": "2026-05-04T12:22:45.811801+00:00"
+  },
+  {
+    "id": "github-20260504-008",
+    "title": "aimacode/aima-python",
+    "url": "https://github.com/aimacode/aima-python",
+    "score": 10,
+    "category": "tutorial",
+    "tags": [
+      "人工智能",
+      "算法实现",
+      "AIMA",
+      "机器学习",
+      "Jupyter"
+    ],
+    "timestamp": "2026-05-04T12:22:45.811805+00:00"
+  },
+  {
+    "id": "github-20260504-009",
+    "title": "norvig/paip-lisp",
+    "url": "https://github.com/norvig/paip-lisp",
+    "score": 10,
+    "category": "tutorial",
+    "tags": [
+      "Common-Lisp",
+      "经典AI算法",
+      "符号AI"
+    ],
+    "timestamp": "2026-05-04T12:22:45.811809+00:00"
+  },
+  {
+    "id": "github-20260504-010",
+    "title": "MycroftAI/mycroft-core",
+    "url": "https://github.com/MycroftAI/mycroft-core",
+    "score": 8,
+    "category": "framework",
+    "tags": [
+      "语音助手",
+      "开源AI",
+      "Python框架"
+    ],
+    "timestamp": "2026-05-04T12:22:45.811814+00:00"
+  },
+  {
+    "id": "github-20260504-011",
+    "title": "guofei9987/scikit-opt",
+    "url": "https://github.com/guofei9987/scikit-opt",
+    "score": 9,
+    "category": "framework",
+    "tags": [
+      "启发式算法",
+      "群体智能",
+      "Python优化库"
+    ],
+    "timestamp": "2026-05-04T12:22:45.811818+00:00"
+  },
+  {
+    "id": "github-20260504-012",
+    "title": "SkalskiP/courses",
+    "url": "https://github.com/SkalskiP/courses",
+    "score": 8,
+    "category": "tutorial",
+    "tags": [
+      "AI学习路线",
+      "资源合集",
+      "开源课程"
+    ],
+    "timestamp": "2026-05-04T12:22:45.811827+00:00"
+  },
+  {
+    "id": "github-20260504-013",
+    "title": "sindresorhus/awesome-chatgpt",
+    "url": "https://github.com/sindresorhus/awesome-chatgpt",
+    "score": 8,
+    "category": "tutorial",
+    "tags": [
+      "Awesome-List",
+      "ChatGPT",
+      "资源导航"
+    ],
+    "timestamp": "2026-05-04T12:22:45.811831+00:00"
+  },
+  {
+    "id": "github-20260504-014",
+    "title": "chrxh/alien",
+    "url": "https://github.com/chrxh/alien",
+    "score": 9,
+    "category": "application",
+    "tags": [
+      "人工生命",
+      "CUDA",
+      "高性能计算",
+      "模拟仿真",
+      "C++"
+    ],
+    "timestamp": "2026-05-04T12:22:45.811835+00:00"
+  },
+  {
+    "id": "github-20260504-015",
+    "title": "louisfb01/start-machine-learning",
+    "url": "https://github.com/louisfb01/start-machine-learning",
+    "score": 8,
+    "category": "tutorial",
+    "tags": [
+      "Machine Learning",
+      "Beginner Guide",
+      "Learning Path"
+    ],
+    "timestamp": "2026-05-04T12:22:45.811838+00:00"
+  },
+  {
+    "id": "github-20260504-016",
+    "title": "AnastasiaNLP/paperintel",
+    "url": "https://github.com/AnastasiaNLP/paperintel",
+    "score": 6,
+    "category": "tool",
+    "tags": [
+      "论文解析",
+      "工程化落地",
+      "自动化工具"
+    ],
+    "timestamp": "2026-05-04T12:22:45.811842+00:00"
   }
 ]

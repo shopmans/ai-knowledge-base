@@ -1,0 +1,26 @@
+{
+  "id": "github-20260504-005",
+  "title": "steven2358/awesome-generative-ai",
+  "url": "https://github.com/steven2358/awesome-generative-ai",
+  "source_url": "https://github.com/steven2358/awesome-generative-ai",
+  "source": "github",
+  "summary_zh": "该项目是一个高质量的生成式人工智能项目和服务的精选资源列表（Awesome List）。它系统地汇集了当前业界最前沿的生成式AI工具、模型、商业平台及相关学习资源。凭借其详尽的分类和极高的社区认可度，该仓库为开发者、研究人员及技术决策者提供了一站式的技术导航，是探索现代生成式AI技术生态、进行技术选型和拓展视野的极佳起点。",
+  "summary": "该项目是一个高质量的生成式人工智能项目和服务的精选资源列表（Awesome List）。它系统地汇集了当前业界最前沿的生成式AI工具、模型、商业平台及相关学习资源。凭借其详尽的分类和极高的社区认可度，该仓库为开发者、研究人员及技术决策者提供了一站式的技术导航，是探索现代生成式AI技术生态、进行技术选型和拓展视野的极佳起点。",
+  "highlights": [
+    "汇集了极其丰富的生成式AI项目与服务，覆盖文本、图像、音频等多个模态",
+    "拥有超万名开发者标星，具有极高的社区影响力和内容权威性",
+    "提供了一站式索引与分类，极大降低了开发者跟踪前沿技术和工具选型的成本"
+  ],
+  "score": 8,
+  "tags": [
+    "awesome-list",
+    "generative-ai",
+    "resource-aggregation"
+  ],
+  "category": "tool",
+  "recommendation": "recommended",
+  "status": "draft",
+  "timestamp": "2026-05-04T12:22:45.811792+00:00",
+  "collected_at": "2026-05-04T12:03:22.267023+00:00",
+  "updated_at": "2026-05-04T12:22:45.811792+00:00"
+}

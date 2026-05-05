@@ -1,0 +1,26 @@
+{
+  "id": "github-20260504-013",
+  "title": "sindresorhus/awesome-chatgpt",
+  "url": "https://github.com/sindresorhus/awesome-chatgpt",
+  "source_url": "https://github.com/sindresorhus/awesome-chatgpt",
+  "source": "github",
+  "summary_zh": "该项目是由知名开源贡献者 Sindre Sorhus 发起的 ChatGPT 精选资源列表。它系统性地汇总了 OpenAI ChatGPT 生态中的高质量开源项目、API 封装、客户端工具、浏览器扩展、提示词工程指南及相关实用教程。作为一份优秀的技术导航索引，它能帮助开发者、研究人员及普通用户快速了解并接入 ChatGPT 周边生态，大幅降低探索 AI 前沿技术的检索成本，是极客与开发者必备的参考书签。",
+  "summary": "该项目是由知名开源贡献者 Sindre Sorhus 发起的 ChatGPT 精选资源列表。它系统性地汇总了 OpenAI ChatGPT 生态中的高质量开源项目、API 封装、客户端工具、浏览器扩展、提示词工程指南及相关实用教程。作为一份优秀的技术导航索引，它能帮助开发者、研究人员及普通用户快速了解并接入 ChatGPT 周边生态，大幅降低探索 AI 前沿技术的检索成本，是极客与开发者必备的参考书签。",
+  "highlights": [
+    "由知名开源大佬维护，社区活跃且收录标准严格，资源质量极高",
+    "全面覆盖 ChatGPT 周边生态，分类清晰，涵盖 API、工具、插件与提示工程",
+    "极佳的技术导航索引，能大幅降低开发者探索大模型应用生态的学习与试错成本"
+  ],
+  "score": 8,
+  "tags": [
+    "Awesome-List",
+    "ChatGPT",
+    "资源导航"
+  ],
+  "category": "tutorial",
+  "recommendation": "recommended",
+  "status": "draft",
+  "timestamp": "2026-05-04T12:22:45.811831+00:00",
+  "collected_at": "2026-05-04T12:03:22.267034+00:00",
+  "updated_at": "2026-05-04T12:22:45.811831+00:00"
+}

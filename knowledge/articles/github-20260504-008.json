@@ -1,0 +1,28 @@
+{
+  "id": "github-20260504-008",
+  "title": "aimacode/aima-python",
+  "url": "https://github.com/aimacode/aima-python",
+  "source_url": "https://github.com/aimacode/aima-python",
+  "source": "github",
+  "summary_zh": "该项目是经典AI教材《人工智能：一种现代方法》（AIMA）的官方Python代码实现库。它通过清晰的Python代码和Jupyter Notebook，将书中的核心理论（如搜索、逻辑推理、概率统计、机器学习和NLP等）转化为可交互执行的实际代码。该项目是系统学习AI底层算法原理、连接理论与实践的绝佳开源资源，适合学生与AI初学者。",
+  "summary": "该项目是经典AI教材《人工智能：一种现代方法》（AIMA）的官方Python代码实现库。它通过清晰的Python代码和Jupyter Notebook，将书中的核心理论（如搜索、逻辑推理、概率统计、机器学习和NLP等）转化为可交互执行的实际代码。该项目是系统学习AI底层算法原理、连接理论与实践的绝佳开源资源，适合学生与AI初学者。",
+  "highlights": [
+    "权威教材配套：AI领域经典圣经《人工智能：一种现代方法》的标准算法实现",
+    "理论与实践结合：采用Jupyter Notebook格式，提供交互式学习体验，便于逐步理解算法",
+    "内容全面：涵盖了从传统搜索、逻辑推理到现代机器学习和自然语言处理等核心领域"
+  ],
+  "score": 10,
+  "tags": [
+    "人工智能",
+    "算法实现",
+    "AIMA",
+    "机器学习",
+    "Jupyter"
+  ],
+  "category": "tutorial",
+  "recommendation": "recommended",
+  "status": "draft",
+  "timestamp": "2026-05-04T12:22:45.811805+00:00",
+  "collected_at": "2026-05-04T12:03:22.267028+00:00",
+  "updated_at": "2026-05-04T12:22:45.811805+00:00"
+}

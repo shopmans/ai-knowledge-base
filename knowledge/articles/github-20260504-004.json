@@ -1,26 +1,28 @@
 {
   "id": "github-20260504-004",
-  "title": "MarcoDSmit/Scoping-Review",
-  "url": "https://github.com/MarcoDSmit/Scoping-Review",
-  "source_url": "https://github.com/MarcoDSmit/Scoping-Review",
+  "title": "tangyudi/Ai-Learn",
+  "url": "https://github.com/tangyudi/Ai-Learn",
+  "source_url": "https://github.com/tangyudi/Ai-Learn",
   "source": "github",
-  "summary_zh": "该项目是一个针对人工智能在传染病和临床微生物学领域应用的范围性综述与证据图谱的补充数据库。它通过HTML提供了一个可搜索的文献数据集，并对收录的记录进行了多维度的非互斥标签化处理，包括出版年份、AI方法、应用类型、感染病况及临床或实验室侧重点。该资源为医学AI交叉领域的研究者提供了高度结构化的循证参考。",
-  "summary": "该项目是一个针对人工智能在传染病和临床微生物学领域应用的范围性综述与证据图谱的补充数据库。它通过HTML提供了一个可搜索的文献数据集，并对收录的记录进行了多维度的非互斥标签化处理，包括出版年份、AI方法、应用类型、感染病况及临床或实验室侧重点。该资源为医学AI交叉领域的研究者提供了高度结构化的循证参考。",
+  "summary_zh": "tangyudi/Ai-Learn 是一个备受推崇的人工智能开源学习项目，旨在为零基础学习者提供从入门到就业的完整路径。项目核心优势在于收录了近 200 个实战案例与项目，并免费提供配套教材。其知识体系极为庞大且系统，全面覆盖 Python 编程、数学基础、数据分析、机器学习、深度学习、CV 与 NLP 等主流领域，并融合了 PyTorch、TensorFlow 等主流框架实践，是极佳的 AI 系统化学习百科全书。",
+  "summary": "tangyudi/Ai-Learn 是一个备受推崇的人工智能开源学习项目，旨在为零基础学习者提供从入门到就业的完整路径。项目核心优势在于收录了近 200 个实战案例与项目，并免费提供配套教材。其知识体系极为庞大且系统，全面覆盖 Python 编程、数学基础、数据分析、机器学习、深度学习、CV 与 NLP 等主流领域，并融合了 PyTorch、TensorFlow 等主流框架实践，是极佳的 AI 系统化学习百科全书。",
   "highlights": [
-    "构建了AI在传染病与临床微生物学领域的结构化循证数据库",
-    "提供多维度的非互斥标签体系（涵盖AI方法、应用类型等）",
-    "提供可交互与搜索的文献证据图谱"
+    "知识体系完整，涵盖从 Python 与数学基础到 ML、DL、CV、NLP 等进阶领域的全栈 AI 内容",
+    "高度注重实战，提供近 200 个实战案例与项目，并配有免费教材，完美衔接理论学习与就业需求",
+    "社区认可度极高（GitHub Stars 超过 1.2 万），是一条经过大量开发者验证的高质量学习路线图"
   ],
-  "score": 6,
+  "score": 9,
   "tags": [
-    "医学人工智能",
-    "文献综述",
-    "临床微生物学"
+    "AI学习路线",
+    "机器学习",
+    "深度学习",
+    "实战项目",
+    "开源教程"
   ],
-  "category": "research",
-  "recommendation": "optional",
+  "category": "tutorial",
+  "recommendation": "recommended",
   "status": "draft",
-  "timestamp": "2026-05-04T10:36:09.542262+00:00",
-  "collected_at": "2026-05-04T10:32:13.047993+00:00",
-  "updated_at": "2026-05-04T10:36:09.542262+00:00"
+  "timestamp": "2026-05-04T12:22:45.811787+00:00",
+  "collected_at": "2026-05-04T12:03:22.267021+00:00",
+  "updated_at": "2026-05-04T12:22:45.811787+00:00"
 }

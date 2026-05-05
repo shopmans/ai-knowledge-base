@@ -1,0 +1,26 @@
+{
+  "id": "github-20260504-015",
+  "title": "louisfb01/start-machine-learning",
+  "url": "https://github.com/louisfb01/start-machine-learning",
+  "source_url": "https://github.com/louisfb01/start-machine-learning",
+  "source": "github",
+  "summary_zh": "该项目是一份面向零基础初学者的机器学习与人工智能系统化学习指南。它为毫无相关背景的学习者规划了清晰的学习路径，涵盖基础概念、核心技能至前沿技术（SOTA）。项目不仅汇总了丰富的开源学习资源，还旨在帮助初学者紧跟 2026 年 AI 领域的最新动态与研究进展。作为拥有 5000+ Star 的高人气手册，非常适合跨界从业者快速入门。",
+  "summary": "该项目是一份面向零基础初学者的机器学习与人工智能系统化学习指南。它为毫无相关背景的学习者规划了清晰的学习路径，涵盖基础概念、核心技能至前沿技术（SOTA）。项目不仅汇总了丰富的开源学习资源，还旨在帮助初学者紧跟 2026 年 AI 领域的最新动态与研究进展。作为拥有 5000+ Star 的高人气手册，非常适合跨界从业者快速入门。",
+  "highlights": [
+    "零基础友好：专为无任何背景的初学者设计，提供循序渐进的完整学习路线图。",
+    "聚焦前沿：内容持续更新，紧跟 2026 年最新 AI 技术动态与 SOTA 技术。",
+    "高星标验证：获得超 5000 个 GitHub Star，是社区高度认可的高质量入门资源库。"
+  ],
+  "score": 8,
+  "tags": [
+    "Machine Learning",
+    "Beginner Guide",
+    "Learning Path"
+  ],
+  "category": "tutorial",
+  "recommendation": "recommended",
+  "status": "draft",
+  "timestamp": "2026-05-04T12:22:45.811838+00:00",
+  "collected_at": "2026-05-04T12:03:22.267037+00:00",
+  "updated_at": "2026-05-04T12:22:45.811838+00:00"
+}

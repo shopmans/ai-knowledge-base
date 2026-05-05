@@ -1,0 +1,26 @@
+{
+  "id": "github-20260504-010",
+  "title": "MycroftAI/mycroft-core",
+  "url": "https://github.com/MycroftAI/mycroft-core",
+  "source_url": "https://github.com/MycroftAI/mycroft-core",
+  "source": "github",
+  "summary_zh": "Mycroft Core 是一个开源的 AI 语音助手平台，使用 Python 编写。它提供完整的语音交互解决方案，包含唤醒词检测、语音转文字（STT）、意图解析和文字转语音（TTS）核心模块。项目高度模块化，允许开发者灵活替换底层引擎并开发自定义技能（Skills）。它致力于打造隐私友好的去中心化语音体验，是开源智能语音生态的重要基础设施与开发框架。",
+  "summary": "Mycroft Core 是一个开源的 AI 语音助手平台，使用 Python 编写。它提供完整的语音交互解决方案，包含唤醒词检测、语音转文字（STT）、意图解析和文字转语音（TTS）核心模块。项目高度模块化，允许开发者灵活替换底层引擎并开发自定义技能（Skills）。它致力于打造隐私友好的去中心化语音体验，是开源智能语音生态的重要基础设施与开发框架。",
+  "highlights": [
+    "提供完整的开源语音助手技术栈，涵盖唤醒词、STT、TTS及意图识别",
+    "高度模块化与解耦设计，支持底层引擎自由替换与第三方技能开发",
+    "注重数据隐私，支持完全本地化或私有化部署，摆脱对商业巨头的依赖"
+  ],
+  "score": 8,
+  "tags": [
+    "语音助手",
+    "开源AI",
+    "Python框架"
+  ],
+  "category": "framework",
+  "recommendation": "recommended",
+  "status": "draft",
+  "timestamp": "2026-05-04T12:22:45.811814+00:00",
+  "collected_at": "2026-05-04T12:03:22.267031+00:00",
+  "updated_at": "2026-05-04T12:22:45.811814+00:00"
+}

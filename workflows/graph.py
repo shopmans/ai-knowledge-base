@@ -1,13 +1,14 @@
 """
 LangGraph 工作流图组装
 
-构建 collect → analyze → organize → review ⟲ save 的有向图。
-review 节点通过条件边决定：通过 → save → END，不通过 → 回到 organize。
+构建 collect → analyze → review → organize → save 的有向图。
+review 节点审核 analyses，通过 → organize → save，不通过 → 回到 analyze。
 """
 
 from langgraph.graph import END, StateGraph
 
-from workflows.nodes import analyze_node, collect_node, organize_node, review_node, save_node
+from workflows.nodes import analyze_node, collect_node, organize_node, save_node
+from workflows.reviewer import review_node
 from workflows.state import KBState
 
 MAX_ITERATIONS = 3
@@ -15,10 +16,10 @@ MAX_ITERATIONS = 3
 
 def _route_after_review(state: KBState) -> str:
     if state.get("review_passed", False):
-        return "save"
+        return "organize"
     if state.get("iteration", 0) >= MAX_ITERATIONS:
-        return "save"
-    return "organize"
+        return "organize"
+    return "analyze"
 
 
 def build_graph() -> StateGraph:
@@ -26,22 +27,22 @@ def build_graph() -> StateGraph:
 
     graph.add_node("collect", collect_node)
     graph.add_node("analyze", analyze_node)
-    graph.add_node("organize", organize_node)
     graph.add_node("review", review_node)
+    graph.add_node("organize", organize_node)
     graph.add_node("save", save_node)
 
     graph.set_entry_point("collect")
 
     graph.add_edge("collect", "analyze")
-    graph.add_edge("analyze", "organize")
-    graph.add_edge("organize", "review")
+    graph.add_edge("analyze", "review")
 
     graph.add_conditional_edges(
         "review",
         _route_after_review,
-        {"save": "save", "organize": "organize"},
+        {"organize": "organize", "analyze": "analyze"},
     )
 
+    graph.add_edge("organize", "save")
     graph.add_edge("save", END)
 
     return graph.compile()
